@@ -28,6 +28,14 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				mcp: {
+					purple: '#9b87f5',
+					darkpurple: '#7E69AB',
+					blue: '#33C3F0',
+					accent: '#D946EF',
+					light: '#E5DEFF',
+					dark: '#1A1F2C',
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
@@ -92,5 +100,7 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+				require("tailwindcss-animate"),
+			],
 } satisfies Config;
